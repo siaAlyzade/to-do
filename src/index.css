@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+@theme {
+  --color-pinky: #ff6767;
+  --color-bgheader: #f8f8f8;
+  --color-bgPrimary: #f5f8ff;
+  --color-lightwhite: #f5f8ff;
+  --color-Priority-Moderate: #42ade2;
+  --color-MainAppView: #a1a3ab;
+  --font-Inter: "Inter", sans-serif;
+  --color-Status-NotStarted: #f21e1e;
+  --color-Status-InProgress: #0225ff;
+  --color-Status-Completed: #05a301;
+  --font-Montserrat: "Montserrat", sans-serif;
+}
+
+@layer components {
+  .App {
+    @apply text-sm  bg-bgPrimary font-Inter;
+  }
+  .Header {
+    @apply flex items-center gap-4 px-2.5 py-5 justify-evenly  bg-bgheader drop-shadow-md
+    md:px-8 md:gap-8;
+  }
+
+  .Primary {
+    @apply flex mt-5 mb-10 justify-center;
+  }
+  .MainApp {
+    @apply relative mx-auto justify-self-center;
+  }
+  .MainAppView {
+    @apply grid grid-cols-1 gap-y-4 mt-5 border-MainAppView/33 border-1 py-5 md:px-6 drop-shadow-sm
+    md:grid-cols-2 md:gap-x-2.5;
+  }
+
+  /* Sidebar */
+  .SideBar {
+    @apply h-screen fixed top-0 left-0 flex flex-col z-50 pt-8 px-4 items-center rounded-tr-lg rounded-br-lg 
+    transition-transform bg-pinky  md:mt-12 lg:pt-28 lg:justify-self-start  xl:relative;
+  }
+  .MiniProfile {
+    @apply flex items-center flex-col mb-5 lg:absolute lg:top-[-3rem];
+  }
+
+  /* Cards */
+  .TodoCard {
+    @apply flex flex-col px-3.5 py-3 border-1 border-[#A1A3AB] rounded-[14px] font-Inter;
+  }
+}
+.active {
+  @apply bg-white;
+}
