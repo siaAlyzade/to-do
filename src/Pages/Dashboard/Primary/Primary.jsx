@@ -5,11 +5,11 @@ import Sidebar from "./Sidebar/Sidebar";
 function Primary() {
   return (
     <main className="Primary">
-      <BrowserRouter>
+      <BrowserRouter basename="/to-do">
         <Sidebar />
         <div className=""></div>
         <Routes>
-          <Route path="/" element={<MainApp />}></Route>
+          <Route index path="/" element={<MainApp />}></Route>
           <Route path="mytasks" element={<MainApp />}></Route>
         </Routes>
         <div className=""></div>

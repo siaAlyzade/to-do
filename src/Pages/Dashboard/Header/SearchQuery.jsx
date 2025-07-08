@@ -11,7 +11,7 @@ function SearchQuery() {
         placeholder="Search your task here..."
       />
       {/*relative right-[100%] */}
-      <ButtonPinky src="/Search.svg" extraClasses={"absolute right-0"} />
+      <ButtonPinky src="Search.svg" extraClasses={"absolute right-0"} />
     </div>
   );
 }

@@ -22,7 +22,7 @@ function TodoCard() {
           </div>
           <img
             className="w-16 h-16 rounded-[14px] self-end object-cover translate-x-4"
-            src="/CardExample.jpg"
+            src="CardExample.jpg"
             alt=""
           />
         </div>
